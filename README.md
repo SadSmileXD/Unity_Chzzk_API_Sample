@@ -1,1 +1,2 @@
-# Unity_Chzzk_API_Sample
+#  채팅 및 도네이션 API 참고용 git
+https://github.com/JoKangHyeon/ChzzkUnity
