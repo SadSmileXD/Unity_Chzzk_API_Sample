@@ -41,12 +41,12 @@ public class ChzzkUnity : MonoBehaviour
 
     int closedCount = 0;
     bool reOpenTrying = false;
-    private string channelId;
+    //private string channelId;
 
-    public ChzzkUnity(string channelId)
-    {
-        this.channelId = channelId;
-    }
+    //public ChzzkUnity(string channelId)
+    //{
+    //    this.channelId = channelId;
+    //}
 
     #region Unity Methods
 
@@ -121,7 +121,7 @@ public class ChzzkUnity : MonoBehaviour
 
     public async UniTask<LiveStatus> GetLiveStatus(string channelId)
     {
-        var url = $"https://api.chzzk.naver.com/polling/v2/channels/{channelId}/live-status";
+        var url = $"https://api.chzzk.naver.com/polling/v3.1/channels/{channelId}/live-status";
         var request = UnityWebRequest.Get(url);
         await request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)
@@ -278,7 +278,17 @@ public class ChzzkUnity : MonoBehaviour
 
     #region Sub-classes
     // ... (기존 클래스들 유지)
-    [Serializable] public class LiveStatus { public int code; public Content content; [Serializable] public class Content { public string chatChannelId; } }
+    [Serializable] 
+    public class LiveStatus 
+    {
+        public int code; 
+        public Content content;
+        [Serializable]
+        public class Content
+        {
+            public string chatChannelId;
+        }
+    }
     [Serializable] public class AccessTokenResult { public int code; public Content content; [Serializable] public class Content { public string accessToken; } }
     [Serializable] public class Profile { public string nickname; }
     [Serializable] public class SubscriptionExtras { public int month; }
