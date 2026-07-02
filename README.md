@@ -58,6 +58,21 @@ key값 에 값이 들어와 있을것이다.
 
 이러면 사용 준비는 끝이난다.
 
+
+## 비공식 api 사용법
+https://github.com/JoKangHyeon/ChzzkUnity 들어가기
+- uniTask 설치하기
+- Newtonsoft 설치하기
+- websocket.dll 프로젝트에 저장 (해당 내용은 참고용 git에 나와 있음)
+
+참고용 git에서 가져와서 사용할 때 문제가 생겨서     
+내가 코드 수정을 했다.  
+
+내 프로젝트의 Unofficial API 폴더에 있는 코드를 사용하면 된다.
+
+![alt text](image-1.png)
+
+해당 기능 작동되는거 확인 후 작성 하였습니다.
 ----------------------------------
 ###  채팅 및 도네이션 API 참고용 git
 https://github.com/JoKangHyeon/ChzzkUnity
