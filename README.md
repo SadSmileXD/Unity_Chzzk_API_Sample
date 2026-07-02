@@ -59,5 +59,8 @@ key값 에 값이 들어와 있을것이다.
 이러면 사용 준비는 끝이난다.
 
 ----------------------------------
-#  채팅 및 도네이션 API 참고용 git
+###  채팅 및 도네이션 API 참고용 git
 https://github.com/JoKangHyeon/ChzzkUnity
+
+### UniwindowController 사용법 기록 해 둔거
+https://velog.io/@aaaggg/UniWindowController
